@@ -289,14 +289,7 @@ const quizData = [
     d: "To translate between programming languages.",
     correct: "b",
   },
-  {
-    question: "How can LLMs be helpful in writing automated email responses?",
-    a: "They can play video games.",
-    b: "They can generate images for emails.",
-    c: "They can assist in crafting responses to customer inquiries.",
-    d: "They can predict the weather for the recipient.",
-    correct: "c",
-  },
+
   {
     question:
       "In the context of coding assistance, how can LLMs be utilized for optimizing code?",
@@ -323,15 +316,6 @@ const quizData = [
     c: "Dreams experienced by LLMs.",
     d: "Mind-altering effects of LLMs.",
     correct: "b",
-  },
-  {
-    question:
-      "How can you mitigate the risk of LLMs generating biased responses?",
-    a: "Encourage the use of poor grammar.",
-    b: "Use vague and ambiguous prompts.",
-    c: "Employ content filters and guidelines.",
-    d: "Increase the model's randomness.",
-    correct: "c",
   },
   {
     question: "What is 'prompt hacking' in the context of LLMs?",
@@ -441,24 +425,6 @@ const quizData = [
     c: "Descriptiveness, context, and precision.",
     d: "Visual style and aesthetics.",
     correct: "c",
-  },
-
-  {
-    question: "What does the chaos parameter control in Midjourney?",
-    a: "Image resolution.",
-    b: "Aspect ratio.",
-    c: "Variation and creativity in image generation.",
-    d: "Image quality.",
-    correct: "c",
-  },
-  {
-    question:
-      "Which parameter in Midjourney controls the time spent generating an image and influences its quality?",
-    a: "Chaos",
-    b: "Aspect Ratio",
-    c: "Seed",
-    d: "Quality",
-    correct: "d",
   },
   // End of the quizzes
 ];
