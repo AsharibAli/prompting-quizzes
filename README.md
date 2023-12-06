@@ -16,8 +16,8 @@ cd 50-question-ai-quiz
 ```
 or 
 
-by visiting this hosted website:
-(LLMs Quizzes)[website.com]
+by visiting this live hosted website:
+[LLMs Quizzes](website.com)
 
 ## Features
 - **Adaptive Difficulty:** Questions range from beginner to expert level, adjusting based on your answers.
