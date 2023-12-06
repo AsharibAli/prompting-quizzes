@@ -16,8 +16,8 @@ cd 50-question-ai-quiz
 ```
 or 
 
-by visiting this live hosted website:
-[LLMs Quizzes](website.com)
+by visiting this live hosted website on vercel:
+[LLMs, AI, Prompting, Quizzes](https://prompting-quizzes.vercel.app/)
 
 ## Features
 - **Adaptive Difficulty:** Questions range from beginner to expert level, adjusting based on your answers.
