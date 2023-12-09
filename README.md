@@ -11,8 +11,8 @@ This quiz comprises 50 meticulously crafted questions, covering a range of topic
 ## Getting Started
 To begin, clone this repository to your local machine:
 ```
-git clone https://github.com/yourusername/50-question-ai-quiz.git
-cd 50-question-ai-quiz
+git clone https://github.com/asharibali/prompting-quizzes
+cd prompting-quizzes
 ```
 or 
 
