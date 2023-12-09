@@ -15,6 +15,7 @@ body {
   overflow: hidden;
   margin: 0;
   overflow: auto; /* enable scrolling on the body */
+  padding-top: 60px; /* This should be equal or higher than the height of the header */
 }
 
 .quiz-container {
@@ -69,4 +70,67 @@ button:hover {
 button:focus {
   outline: none;
   background-color: #5e3370;
+}
+
+footer {
+  text-align: center;
+  width: 100%;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+footer p {
+  color: black; /* Choose a text color that fits the footer's background */
+}
+
+footer a {
+  color: #8e44ad; /* This is an example color */
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.sticky-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333; /* Dark background for the header */
+  color: white;
+  text-align: center;
+  z-index: 1000; /* Ensure the header remains above other content */
+  padding: 10px 0; /* Some padding to increase the height of the header */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: add shadow for better visibility */
+  font-family: Arial, sans-serif; /* Change the font style */
+}
+
+@media screen and (max-width: 768px) {
+  .sticky-header {
+    padding: 5px 0; /* Reduce the padding on smaller screens */
+  }
+  body {
+    /* Remove the 'height: 100vh;' to allow the body to expand with content */
+    height: auto;
+    min-height: 100vh; /* Ensures it takes at least the full height of the viewport */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: flex-start; /* Align content to the top */
+    /* padding-top: 50px; Adjust if necessary for mobile */
+  }
+
+  .quiz-container {
+    /* Remove the 'margin-bottom: 80px;' if you want less space above the footer */
+    margin-bottom: 20px; /* Adjust this value as needed to create space above the footer */
+    width: auto; /* Allow the container to adjust its width on small screens */
+    max-width: 600px; /* Maximum width to maintain layout consistency */
+    height: auto; /* Let the container grow with content */
+  }
+
+  footer {
+    position: relative; /* Position relative to the natural flow */
+    bottom: auto; /* Remove 'bottom: 0;' to avoid sticking it to the bottom */
+    left: auto; /* Remove 'left: 0;' to avoid sticking it to the side */
+  }
 }
