@@ -46,21 +46,17 @@ const generatePDF = async (name) => {
 };
 
 document.addEventListener("DOMContentLoaded", function () {
-  // actual path of your Quiz App
+  // the actual path of your Quiz App
   const allowedReferrer = "https://prompting-quizzes.vercel.app/";
+  console.log("Referrer URL:", document.referrer);
+  // This line logs the referrer URL
 
   if (!document.referrer || document.referrer.indexOf(allowedReferrer) !== 0) {
-    // If the referrer is not the Quiz App, hide the certificate generation UI or redirect
-    document.body.innerHTML =
-      "<p>Access Denied. Please complete the Quiz to generate a certificate.</p>";
-    <p>
-      First, please visit{" "}
-      <a href="https://prompting-quizzes.vercel.app/" target="_blank">
-        this website
-      </a>{" "}
-      and complete the quiz.
-    </p>;
-    // Alternatively, you can redirect them back to the quiz
-    // window.location.href = 'https://your-quiz-app-domain.com/path';
+    // If the referrer is not the Quiz App, hide the certificate generation UI.
+    document.body.innerHTML = `<p>Access Denied. Please visit the <a href="https://prompting-quizzes.vercel.app/" target="_blank">
+    quiz website 
+  </a>
+   first to complete the quizzes then generate your certificate here.</p>`;
   }
+  // Else, continue with the certificate generation logic
 });
