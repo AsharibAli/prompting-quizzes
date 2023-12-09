@@ -124,3 +124,37 @@ input[type="submit"] {
   border-radius: 5px;
   cursor: pointer;
 }
+
+/* Existing styles... */
+
+@media (max-width: 768px) {
+  header {
+    padding: 50px 15px; /* Reduced padding */
+  }
+  .heading_text h1 {
+    font-size: 28px; /* Smaller font size */
+  }
+  .heading_text h2 {
+    font-size: 18px; /* Smaller font size for subheading */
+  }
+  input,
+  span,
+  label,
+  button {
+    font-size: 16px; /* Adjust font size for better readability */
+  }
+  input.question {
+    font-size: 22px; /* Slightly larger font size for input question */
+    padding-top: 25px;
+  }
+  input.question + label > span {
+    font-size: 22px; /* Smaller label span font size */
+    top: -40px; /* Adjusted position */
+  }
+  main {
+    padding: 10px; /* Adjust padding */
+  }
+  button {
+    padding: 10px 15px; /* Adjust button padding */
+  }
+}
