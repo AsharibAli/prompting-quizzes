@@ -70,3 +70,26 @@ button:focus {
   outline: none;
   background-color: #5e3370;
 }
+
+footer {
+  text-align: center;
+  width: 100%;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+footer p {
+  color: #fff; /* Choose a text color that fits the footer's background */
+}
+
+footer a {
+  color: #8e44ad; /* This is an example color */
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
