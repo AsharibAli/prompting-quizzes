@@ -441,6 +441,22 @@ const submitBtn = document.getElementById("submit");
 
 let currentQuiz = 0;
 let score = 0;
+let startTime;
+
+function startTimer() {
+  startTime = new Date();
+}
+
+function getTimeTaken() {
+  const endTime = new Date();
+  const timeTaken = new Date(endTime - startTime);
+  const minutes = timeTaken.getUTCMinutes();
+  const seconds = timeTaken.getUTCSeconds();
+  return { minutes, seconds };
+}
+
+// Start the timer as soon as the quiz data loads
+startTimer();
 
 loadQuiz();
 
@@ -485,12 +501,15 @@ submitBtn.addEventListener("click", () => {
     if (currentQuiz < quizData.length) {
       loadQuiz();
     } else {
+      const { minutes, seconds } = getTimeTaken(); // Get the time taken
       quiz.innerHTML = `
-                <h2>You answered ${score}/${quizData.length} questions correctly</h2>
-
-                <button onclick="window.location.href='https://certificate-nu.vercel.app/'">Now Generate Certificate.</button>
-
-            `;
+        <h2>You answered ${score}/${quizData.length} questions correctly</h2>
+        <h2>In ${minutes} Minutes and ${seconds} Seconds.</h2>
+        <button onclick="window.location.href='https://certificate-nu.vercel.app/'">Now Generate Certificate.</button>
+      `;
     }
   }
 });
+
+// Remember to call loadQuiz to start the quiz!
+loadQuiz();
