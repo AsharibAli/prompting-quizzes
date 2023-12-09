@@ -76,7 +76,7 @@ submitBtn.addEventListener("click", () => {
       quiz.innerHTML = `
                 <h2>You answered ${score}/${quizData.length} questions correctly</h2>
 
-                <button onclick="window.location.href='https://certificate-nu.vercel.app/'">Now Generate Certificate</button>
+                <button onclick="window.location.href='https://certificate-nu.vercel.app/'">Now Generate Certificate.</button>
 
             `;
     }
