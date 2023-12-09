@@ -503,6 +503,14 @@ submitBtn.addEventListener("click", () => {
     } else {
       const { minutes, seconds } = getTimeTaken(); // Get the time taken
       
+      // Trigger the confetti
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 }
+      });
+      
+      // Display the final score and time taken
       quiz.innerHTML = `
         <h2>You answered ${score}/${quizData.length} questions correctly</h2>
         <h2>In ${minutes} Minutes and ${seconds} Seconds.</h2>
@@ -511,6 +519,5 @@ submitBtn.addEventListener("click", () => {
     }
   }
 });
-
 // Remember to call loadQuiz to start the quiz!
 loadQuiz();
