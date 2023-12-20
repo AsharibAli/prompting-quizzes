@@ -46,4 +46,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgements
 - AI Enthusiasts and Experts
 - Contributors and Community Members
-- [OpenAI's GPT-4](https://openai.com/gpt-4) for inspiration
+- [OpenAI's GPT-4](https://openai.com/gpt-4) for inspiration.
