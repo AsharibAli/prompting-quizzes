@@ -17,7 +17,7 @@ cd prompting-quizzes
 or 
 
 by visiting this live hosted website on vercel:
-[LLMs, AI, Prompting, Quizzes](https://prompting-quizzes.vercel.app/)
+[LLMs, AI, Prompting, Quizzes](https://prompting-quizzes.vercel.app/).
 
 ## Features
 - **Adaptive Difficulty:** Questions range from beginner to expert level, adjusting based on your answers.
