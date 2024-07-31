@@ -1,6 +1,6 @@
 # 50-Question AI Quiz Challenge
 
-Welcome to the **50-Question AI Quiz Challenge**! Test your prompt engineering, AI, and large language model skills with our interactive quiz. Designed for enthusiasts and professionals alike, this quiz offers a blend of challenges to sharpen your understanding and application of AI technologies..
+Welcome to the **50-Question AI Quiz Challenge**! Test your prompt engineering, AI, and large language model skills with our interactive quiz. Designed for enthusiasts and professionals alike, this quiz offers a blend of challenges to sharpen your understanding and application of AI technologies.
 
 ## Table of Contents
 - [Learn Prompt Engineering by Roadmap.sh](https://roadmap.sh/prompt-engineering)
@@ -46,4 +46,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgements
 - AI Enthusiasts and Experts
 - Contributors and Community Members
-- [OpenAI's GPT-4](https://openai.com/gpt-4) for inspiration.
+- [OpenAI's GPT-4o](https://openai.com/gpt-4) for inspiration.
