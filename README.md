@@ -8,15 +8,7 @@ Welcome to the **50-Question AI Quiz Challenge**! Test your prompt engineering, 
 ## About the Quiz
 This quiz comprises 50 meticulously crafted questions, covering a range of topics from basic AI concepts to advanced prompt engineering techniques. It's a perfect tool for self-assessment, learning, and even for conducting workshops or team-building activities in tech communities.
 
-## Getting Started
-To begin, clone this repository to your local machine:
-```
-git clone https://github.com/asharibali/prompting-quizzes
-cd prompting-quizzes
-```
-or 
-
-by visiting this live hosted website on vercel:
+- visit our live hosted website:
 [LLMs, AI, Prompting, Quizzes](https://prompting-quizzes.vercel.app/).
 
 ## Features

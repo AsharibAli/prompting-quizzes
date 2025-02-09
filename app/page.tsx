@@ -1,9 +1,10 @@
 "use client";
+
 import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import Confetti from "react-confetti";
 import { useWindowSize } from "react-use";
-import PromptingQuestions from "./questions.json";
+import jsTsQuestion from "../data/questions.json";
 import {
   AlertDialog,
   AlertDialogAction,
@@ -26,7 +27,7 @@ type QuizData = {
   correct: string;
 };
 
-const quizData: QuizData[] = PromptingQuestions;
+const quizData: QuizData[] = jsTsQuestion;
 
 const QuizApp: React.FC = () => {
   const [currentQuiz, setCurrentQuiz] = useState(0);
@@ -122,7 +123,7 @@ const QuizApp: React.FC = () => {
 
       <header className="fixed top-0 z-50 w-full bg-gray-800 py-2 text-center text-white shadow-lg">
         ➡️ Challenge Your AI, LLMs, Prompting Knowledge: Tackling{" "}
-        <strong> Question {currentQuiz + 1} </strong> of 50 🔥
+        <strong> Question {currentQuiz + 1} </strong>🔥
       </header>
       <div className="w-full max-w-md md:max-w-lg mx-4 overflow-auto rounded-lg bg-white shadow-2xl transform transition-all duration-300 hover:scale-105">
         {!isFinished ? (
