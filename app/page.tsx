@@ -183,7 +183,7 @@ const QuizApp: React.FC = () => {
                 {" "}
                 {score} out of {quizData.length}{" "}
               </b>{" "}
-              JS & TS Intro Questions Correctly.
+              Prompting Questions Correctly.
             </h2>
             <h2 className="my-4 text-center">
               In {minutes} Minutes and {seconds} Seconds.
